@@ -1,0 +1,71 @@
+<?php
+// Heading Hindi language 
+
+$lang['text_home_site'] = 'घर';
+$lang['text_home_admin'] = 'होम एडमिन';
+$lang['text_language'] = 'भाषा';
+$lang['text_profile'] = 'प्रोफ़ाइल';
+$lang['text_exit'] = 'बाहर जाएं';
+$lang['text_pages'] = 'पृष्ठों';
+$lang['text_pages_view'] = 'सभी पेज';
+$lang['text_pages_add'] = 'पेज जोड़ें';
+$lang['text_add'] = 'जोड़ें';
+$lang['text_files'] = 'फ़ाइलें';
+$lang['text_plugins'] = 'प्लग-इन';
+$lang['text_add_plugins'] = 'प्लगइन्स जोड़ें';
+$lang['text_settings'] = 'समायोजन';
+$lang['text_edit'] = 'संपादित करें';
+$lang['text_delete'] = 'हटाएं';
+$lang['text_users'] = 'उपयोगकर्ताओं';
+$lang['text_themes'] = 'थीम्स';
+$lang['text_system'] = 'प्रणाली';
+$lang['text_icon'] = 'आइकन';
+$lang['text_layout_options'] = 'लेआउट विकल्प';
+$lang['text_fixsed_options'] = 'निश्चित लेआउट को सक्रिय करें';
+$lang['text_fixsed_options_desk'] = 'आप फ़िक्स्ड और बॉक्सिंग लेआउट का एक साथ उपयोग नहीं कर सकते हैं';
+$lang['text_boxed_layout'] = 'बॉक्सिंग लेआउट';
+$lang['text_boxed_layout_desk'] = 'बॉक्सिंग लेआउट को सक्रिय करें';
+$lang['text_toggle_sidebar'] = 'साइडबार टॉगल करें.';  
+$lang['text_toggle_sidebar_desk'] = 'बाएँ साइडबार की स्थिति को टॉगल करें (खोलें या संक्षिप्त करें)';
+$lang['text_sistem_language'] = 'सिस्टम भाषा';
+$lang['text_sistem_language_desk'] = 'सिस्टम की भाषा को परिभाषित करें (निम्न संस्करणों में सेटिंग्स को सहेजना)';
+$lang['text_all_users_1'] = 'USERS';
+$lang['text_pagess'] = 'पृष्ठों';
+$lang['text_records'] = 'डेटाबेस में रिकॉर्ड';
+$lang['text_pages_load'] = 'लोड किया गया';
+$lang['text_load_time'] = 'सेकंड';
+$lang['text_chenge'] = 'संपादित करें';
+$lang['text_page_title'] = 'पन्ने का नाम';
+$lang['text_page_content'] = 'विषय';
+$lang['text_page_tegs'] = 'टैग';
+$lang['text_page_record'] = 'अभिलेख';
+$lang['text_user_profile'] = 'उपयोगकर्ता रूपरेखा';
+$lang['text_img'] = 'इमेजिस';
+$lang['text_Login'] = 'लॉग इन करें';
+$lang['text_Email'] = 'ईमेल';
+$lang['text_Surname'] = 'उपनाम';
+$lang['text_Name'] = 'नाम';
+$lang['text_About'] = 'About';
+$lang['text_Role'] = 'भूमिका';
+$lang['text_Skin_admins'] = 'त्वचा व्यवस्थापक';
+$lang['text_Password'] = 'कुंजिका';
+$lang['text_Characters'] = 'पात्र';
+$lang['text_Blue'] = 'नीला';
+$lang['text_Red'] = 'लाल';
+$lang['text_Yellow'] = 'पीला';
+$lang['text_Green'] = 'हरा';
+$lang['text_Purple'] = 'नील लोहित रंग का';
+$lang['text_English'] = 'English';
+$lang['text_Hindi'] = 'हिन्दी';
+$lang['text_Demo'] = 'डेमो';
+$lang['text_Administrator'] = 'प्रशासक';
+$lang['text_Update'] = 'अद्यतन';
+$lang['text_Add_User'] = 'उपयोगकर्ता जोड़ें';
+$lang['text_Login_Surename_Name'] = 'लॉगिन, उपनाम, नाम';
+//pages
+$lang['text_Pages'] = 'पृष्ठों';
+$lang['text_pagess'] = 'पृष्ठों';
+$lang['text_page'] = 'पृष्ठ';
+$lang['text_url'] = 'यूआरएल';
+
+?>

@@ -1,0 +1,7 @@
+<div class="section-full bg-img-fix content-inner-2 ">
+	<div class="container">
+		<div class="row relative">
+		    <?=$content?>
+		</div>
+	</div>
+</div>
