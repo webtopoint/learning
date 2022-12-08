@@ -1,0 +1,31 @@
+.sm-categories .content-box .image-cat{
+	margin-bottom: 8px;
+}
+
+.sm-categories .content-box .cat-title a{
+	display: inline-block;
+	font-size: 116.67%;
+	margin-bottom: 3px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.sm-categories .content-box .child-cat{
+	margin-bottom: 30px;
+}
+
+.sm-categories .content-box .child-cat .child-cat-title a{
+	font-size: 108.33%;
+	display: inline-block;
+	padding: 2px 1px;
+}
+
+.sm-categories .content-box .child-cat .child-cat-title a:before{
+	background-color: #999;
+	content: "";
+	display: inline-block;
+	height: 4px;
+	margin-right: 3px;
+	vertical-align: middle;
+	width: 4px;
+}

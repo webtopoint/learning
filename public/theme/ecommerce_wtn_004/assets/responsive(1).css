@@ -1,0 +1,99 @@
+/* Responsive */
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .home-page-4 .services-home .banner-policy .inner .policy {
+        padding: 0 20px;
+    }
+
+    .home-page-4 .services-home .banner-policy .inner .policy a span {
+        padding-left: 20px;
+    }
+
+    .home-page-4 .static-image-2 .image-top {
+        margin-bottom: 24px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .home-page-4 .services-home .banner-policy .inner .policy {
+        margin-bottom: 20px;
+        width: 50%;
+    }
+
+    .home-page-4 .services-home .banner-policy .inner {
+        padding: 33px 0 13px;
+    }
+
+    .home-page-4 .static-image-2 .image-top {
+        margin-bottom: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .home-page-4 .services-home .banner-policy .inner .policy {
+        margin-bottom: 20px;
+        padding: 7px 20px;
+        width: 50%;
+    }
+
+    .home-page-4 .services-home .banner-policy .inner .policy a span {
+        padding-left: 20px;
+    }
+
+    .home-page-4 .services-home .banner-policy .inner {
+        padding: 33px 0 13px;
+    }
+
+    .home-page-4 .static-image-2 .image-top {
+        margin-bottom: 18px;
+    }
+
+    .home-page-4 .static-image-2 {
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    .home-page-4 .static-image-2 .static-image {
+        float: left;
+        padding: 0 5px;
+        width: 33.33%;
+    }
+     .catimagebox{
+        height:90px !important;
+    }
+    .home-page-4 .static-image-2 .static-image .image-top {
+        margin-bottom: 12px;
+    }
+
+    .home-page-4 .static-image-2 .static-image a {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .catimagebox{
+        height:90px !important;
+    }
+    .home-page-4 .services-home .banner-policy .inner {
+        padding: 10px 0;
+    }
+
+    .home-page-4 .services-home .banner-policy .inner .policy {
+        padding: 15px 35px;
+        width: 100%;
+    }
+
+    .home-page-4 .static-image-2 .static-image {
+        float: none;
+        width: 100%;
+    }
+
+    .sm-categories .content-box {
+        float: none;
+        width: 100%;
+    }
+}

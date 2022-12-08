@@ -1,0 +1,212 @@
+/* Responsive */
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .header-style-4 .switcher-wrap .switch-content {
+        left: auto;
+        right: -1px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .header-style-4 .switcher-wrap .switch-content {
+        left: auto;
+        right: -1px;
+    }
+
+    .yt-responsivemenu {
+        margin: 0 15px;
+    }
+
+    .yt-header-bottom {
+        height: 50px;
+    }
+
+    .header-style-4 .yt-header-bottom .btn-navbar {
+        border-radius: 0;
+        color: #fff;
+        font-size: 21px;
+        height: 36px;
+        line-height: 36px;
+        margin-top: 6px;
+        padding: 0;
+        text-align: center;
+        width: 36px;
+    }
+
+    .header-style-4 .searchbox-header {
+        height: 0;
+    }
+
+    .header-style-4 .search-cart {
+        display: block;
+        margin: -36px 0 0 41px;
+        width: auto;
+    }
+
+    .header-style-4 .head-cart {
+        padding-left: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-style-4 .switcher-wrap .switch-content {
+        left: auto;
+        right: -1px;
+    }
+
+    .yt-responsivemenu {
+        margin: 0 15px;
+    }
+
+    .header-style-4 .yt-header-bottom .btn-navbar {
+        border-radius: 0;
+        color: #fff;
+        font-size: 21px;
+        height: 36px;
+        line-height: 36px;
+        margin-top: 6px;
+        padding: 0;
+        text-align: center;
+        width: 36px;
+    }
+
+    .header-style-4 .searchbox-header {
+        height: 0;
+    }
+
+    .header-style-4 .search-cart {
+        display: block;
+        margin: -36px 0 0 41px;
+        width: auto;
+    }
+
+    .header-style-4 .head-cart {
+        padding-left: 5px;
+    }
+
+    .header-style-4 .sm-searbox-content .form-input select {
+        display: none;
+    }
+
+    .header-style-4 .sm-searbox-content .form-input .input-text {
+        padding: 0 10px;
+    }
+
+    .header-style-4 .head-cart .show-cart-button .detail-minicart-v4 {
+        height: 36px;
+        text-align: center;
+        width: 36px;
+    }
+
+    .header-style-4 .head-cart .show-cart-button .detail-minicart-v4:before {
+        margin: 0;
+    }
+
+    .header-style-4 .head-cart .show-cart-button {
+        padding: 0;
+    }
+
+    .header-style-4 .head-cart .show-cart-button .detail-minicart-v4 > p,
+    .header-style-4 .head-cart .show-cart-button .detail-minicart-v4 > span {
+        display: none;
+    }
+
+    .mini-cartpro .block-content::before {
+        right: 12px;
+    }
+
+    .header-style-4 .yt-header-top {
+        height: auto;
+    }
+
+    .header-style-4 .customer-action-hd {
+        text-align: center;
+    }
+
+    .header-style-4 .links {
+        float: none;
+        text-align: center;
+    }
+
+    .header-style-4 .links li {
+        display: inline-block;
+        float: none;
+    }
+
+    .header-style-4 .logo-header {
+        float: left;
+        width: 45%;
+    }
+
+    .header-style-4 .header-middle-right {
+        float: right;
+        width: 55%;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-msg {
+        display: none;
+    }
+
+    .header-style-4 .logo-header,
+    .header-style-4 .header-middle-right {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .header-style-4 .logo-header {
+        margin-bottom: 20px;
+    }
+
+    .header-style-4 .links li:not(:first-child):before {
+        display: none;
+    }
+
+    .header-style-4 .links li:not(:first-child) {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header-style-4 .links li a {
+        padding: 0 0 0 30px;
+    }
+
+    .header-style-4 .switcher-wrap,
+    .header-style-4 .block-compare {
+        display: inline-block;
+        float: none;
+        margin: 0 2px;
+        vertical-align: top;
+    }
+
+    .header-style-4 .sm-searbox-content .action button {
+        padding: 0;
+        width: 36px;
+    }
+
+    .header-style-4 .sm-searbox-content .action button:before {
+        content: "\f002";
+        font-family: FontAwesome;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .header-style-4 .sm-searbox-content .action button span {
+        display: none;
+    }
+
+    .header-style-4 .switcher-wrap .switch-content,
+    .header-style-4 .block-compare .block-content {
+        text-align: left;
+    }
+
+    .header-style-4 .switcher-wrap ul {
+        min-width: 110px;
+    }
+}

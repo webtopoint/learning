@@ -1,0 +1,227 @@
+
+        /* News Portal CSS */
+        .sec-title h5 img {
+            width: 148px!important;
+            height: 69px!important;
+        }
+        
+        /* END NEws Portal CSS*/
+        
+        
+        	.fadeout {
+                position: relative; 
+                bottom: 4em;
+                height: 4em;
+                background: -webkit-linear-gradient(
+                    rgba(255, 255, 255, 0) 0%,
+                    rgba(255, 255, 255, 1) 100%
+                ); 
+                background-image: -moz-linear-gradient(
+                    rgba(255, 255, 255, 0) 0%,
+                    rgba(255, 255, 255, 1) 100%
+                );
+                background-image: -o-linear-gradient(
+                    rgba(255, 255, 255, 0) 0%,
+                    rgba(255, 255, 255, 1) 100%
+                );
+                background-image: linear-gradient(
+                    rgba(255, 255, 255, 0) 0%,
+                    rgba(255, 255, 255, 1) 100%
+                );
+                background-image: -ms-linear-gradient(
+                    rgba(255, 255, 255, 0) 0%,
+                    rgba(255, 255, 255, 1) 100%
+                );
+            } 
+            
+            .goog-te-banner-frame.skiptranslate,.goog-tooltip.skiptranslate{
+                visibility: hidden!important;
+            }
+            
+            .goog-text-highlight {
+                background-color: transparent;
+                box-shadow: none
+            }
+            
+            body{
+                top:0!important;
+            }
+            
+            .youtube-v-thumb{
+                position: absolute;
+                top: 42%;
+                left: 41%;
+                height: 39px;
+            }
+        
+            /*================================*/
+            
+            
+            #overlay,#fileView{
+            	height: 100%;
+            	width: 100%;
+            	background: rgba(0,0,0,0.7);
+            	z-index: 99909;
+            	position: fixed;
+            	top:0;
+            	left: 0;
+            	overflow:auto;
+            	display: none;
+            	padding: 15px;
+            }
+            
+            #overlay button,#fileView button
+            {
+            	margin: 10px;
+            	float: right;
+            }
+            
+            #overlay img
+            {
+            	border: 2px solid white;
+            }
+            
+            .VideoBox .image i
+            {
+            	color:#a9a9a9; 
+            	font-size:75px; 
+            	position:absolute;
+            	top: 39%;
+            	left: 42%;
+            	cursor: pointer;
+            }
+            .VideoBox .image:hover i
+            {
+            	color: #f70000;
+            }
+            </style>
+            <style type="text/css">
+            	    .fixed-header{
+            	        position: static!important;
+            	    }
+            	.wplogo{
+            		height: 80px;
+            		width: 80px;
+            		position: fixed;
+            		z-index: 99;
+            		top: 85%;
+            		margin: 15px;	
+            			
+            	}
+            	.wplogo > img{
+            	    height:100%;
+            	    width:100%;
+            	}
+            	#popup
+            	{
+            		height: 100%;
+            		width: 100%;
+            		position: fixed;
+            		background: linear-gradient(180deg, black, transparent);
+            		top: 0;
+            		left: 0;
+            		z-index: 99999;
+            
+            	}
+            
+            	.social_links
+            	{
+            		position: fixed;
+            		z-index: 90990909;
+            		width: 42px;
+            		min-height: 30px;
+            		top:25%;
+            	}
+            	.social_links > a
+            	{
+            		text-align: center;
+            		line-height: 60px;
+            		font-size: 20px;
+            		background: black;
+            		width: 42px!important;	
+            		height: 50px!important;
+            		color:white;
+            		float: left;
+            		padding: 15px;
+            	}
+            	.social_links > a:hover
+            	{
+            		background: black;
+            		width: 60px!important;	
+            		height: 50px!important;
+            	}
+            	.social_links > .facebook
+            	{
+            		background: #3B5998;
+            		width: 42px!important;	
+            		height: 50px!important;
+            	}
+            	.social_links > .twitter
+            	{
+            		background: #55ACEE;
+            		width: 42px!important;	
+            		min-height: 50px!important;
+            	}
+            	.social_links > .instagram
+            	{
+            		background: #fc4103;
+            		width: 42px!important;	
+            		height: 50px!important;
+            	}
+            	.social_links > .linkedin
+            	{
+            		background: #007bb5;
+            		width: 42px!important;	
+            		height: 50px!important;
+            	}
+            	.social_links > .pintrest
+            	{
+            		background: #8c670a;
+            		width: 42px!important;	
+            		height: 50px!important;
+            	}
+            	.social_links > .youtube
+            	{
+            		background: #bb0000;
+            		width: 42px!important;	
+            		height: 50px!important;
+            	}
+            		.info_body a
+        	{
+        		width:99%;
+        		display: inline-block;
+        		padding: 2px;
+        		margin:1px;
+        		word-wrap: nowrap;
+        		text-align:left;
+        		border-bottom: 1px solid #ccc;
+        		color:#6b6a6a;
+        	}
+            /* width */
+            .scrolldiv::-webkit-scrollbar {
+              width: 5px;
+            }
+            
+            /* Track */
+            .scrolldiv::-webkit-scrollbar-track {
+              background: #f1f1f1; 
+            }
+             
+            /* Handle */
+            .scrolldiv::-webkit-scrollbar-thumb {
+              background: #888; 
+            }
+            
+            /* Handle on hover */
+            .scrolldiv::-webkit-scrollbar-thumb:hover {
+              background: #555; 
+            }
+              .info_body a:hover{
+               color:black;
+              }
+              
+            @media screen and (max-width: 600px) {
+                  .jconfirm .jconfirm-box-container.jconfirm-no-transition{
+                      width:50%!important;
+                  }
+            }

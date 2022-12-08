@@ -1,0 +1,458 @@
+
+.sm_megamenu_wrapper_vertical_menu {
+    margin: 0;
+    display: block;
+    background-color: #fff;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu > li {
+    position: static;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li.sm_megamenu_lv1:hover > a{
+    background-color: #f3f4f8;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu > li > div{
+    min-height: 100%;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu {
+    list-style: none;
+    padding: 0px;
+    border: 1px solid #eee;
+    box-sizing: unset !important;
+    border-top: none;
+    position: relative;
+    background-color: #fff;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li.sm_megamenu_lv1.parent:first-child > a.sm_megamenu_head:after {
+    top: 16px;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li.sm_megamenu_lv1.parent > a.sm_megamenu_head .sm_megamenu_title:after {
+    font-family: FontAwesome;
+    content: "\f0da";
+    font-size: 14px;
+    float: right;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li.sm_megamenu_lv1.parent:hover > a.sm_megamenu_head .sm_megamenu_title:after{
+    opacity: 1;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li.sm_megamenu_lv1 > a.sm_megamenu_head {
+    position: relative;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li.sm_megamenu_lv1 > a.sm_megamenu_head:before{
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 2px;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li.sm_megamenu_lv1.sm_megamenu_actived > a.sm_megamenu_head{
+    background-color: #f3f4f8;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li.sm_megamenu_lv1.sm_megamenu_actived > a.sm_megamenu_head:before{
+    opacity: 1;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li.sm_megamenu_lv1:hover > a.sm_megamenu_head:before{
+    opacity: 1;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li.sm_megamenu_lv1 > a.sm_megamenu_head > span {
+    padding: 9px 0;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li.sm_megamenu_lv1:first-child > a.sm_megamenu_head > span {
+    padding-top: 12px;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li.sm_megamenu_lv1:last-child > a.sm_megamenu_head > span {
+    border-bottom: none;
+    position: relative;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li.sm_megamenu_lv1.parent > a.sm_megamenu_head > span:before {
+    content: "";
+    float: right;
+    position: absolute;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li.sm_megamenu_lv1 > a.sm_megamenu_head {
+    padding: 0 20px;
+    display: block;
+    margin: 0 -1px;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li.sm_megamenu_lv1 > a.sm_megamenu_head .sm_megamenu_title {
+    padding-left: 30px;
+    position: relative;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li .sm_megamenu_title {
+    font-size: 108.3%;
+    line-height: 25px;
+    white-space: nowrap;
+    display: block;
+}
+
+/*--content drop ---*/
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .parent .sm-megamenu-child .mega1-col {
+    width: 50%;
+    float: left;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .parent .sm-megamenu-child .mega-title {
+    font-size: 116.6%;
+    font-weight: bold;
+    color: #444;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .parent .sm-megamenu-child .mega1-col ul {
+    margin-bottom: 20px;
+    display: table;
+    width: 100%;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .parent .sm-megamenu-child .megamenu1 .mega1-cont:after {
+    background-image: url(img/menu1-bg.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: -13px;
+    width: 400px;
+    height: 200px;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .parent .sm-megamenu-child .megamenu1 .mega1-cont {
+    display: inline-block;
+    position: relative;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .parent .sm-megamenu-child .megamenu2 .mega1-cont .mega1-col1,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .parent .sm-megamenu-child .mega1-cont .inner {
+    padding-top: 25px;
+    padding-left: 30px;
+    float: left;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .parent .sm-megamenu-child .megamenu1 {
+    padding: 0;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .parent .sm-megamenu-child .megamenu2 {
+    padding: 0;
+    width: 610px;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .parent .sm-megamenu-child .megamenu3 {
+    padding: 30px 30px 0;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .parent .sm-megamenu-child .megamenu3 ul {
+    margin-bottom: 20px;
+    display: table;
+    width: 100%;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .parent .sm-megamenu-child .megamenu3 .mega3-col1,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .parent .sm-megamenu-child .megamenu3 .mega3-col2 {
+    border-right: 1px solid #fff;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .parent .sm-megamenu-child .megamenu1 .sm_megamenu_content {
+
+}
+
+/* Standard lists styles */
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px 0;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li ul li {
+    line-height: 29px;
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 100%;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li ul li a {
+    padding: 0;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li ul li:hover {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 01 MENU BAR */
+.sambar {
+    position: relative;
+}
+
+.sambar a:focus {
+    outline: none;
+}
+
+.sambar ul li {
+    background: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.sambar .sambar-inner:before,
+.sambar .sambar-inner:after {
+    display: table;
+    content: '';
+    line-height: 0;
+}
+
+.sambar .sambar-inner:after {
+    clear: both;
+}
+
+/* 02 DROP DOWN MENU */
+/* Left & right aligned common styles */
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_dropdown_1column,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_dropdown_2columns,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_dropdown_3columns,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_dropdown_4columns,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_dropdown_5columns,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_dropdown_6columns,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_dropdown_fullwidth {
+    position: absolute;
+    border: 1px solid #eee;
+    z-index: 999;
+    background-color: #fff;
+    top: 0;
+    left: 100%;
+    visibility: hidden;
+    width: auto !important;
+}
+
+.sm_megamenu_wrapper_horizontal_menu .sm_megamenu_menu .sm_megamenu_dropdown_1column {
+    width: 16.66%;
+}
+
+.sm_megamenu_wrapper_horizontal_menu .sm_megamenu_menu .sm_megamenu_dropdown_2columns {
+    width: 33.33%;
+}
+
+.sm_megamenu_wrapper_horizontal_menu .sm_megamenu_menu .sm_megamenu_dropdown_3columns {
+    width: 50%;
+}
+
+.sm_megamenu_wrapper_horizontal_menu .sm_megamenu_menu .sm_megamenu_dropdown_4columns {
+    width: 66.66%;
+}
+
+.sm_megamenu_wrapper_horizontal_menu .sm_megamenu_menu .sm_megamenu_dropdown_5columns {
+    width: 83.33%;
+}
+
+.sm_megamenu_wrapper_horizontal_menu .sm_megamenu_menu .sm_megamenu_dropdown_6columns {
+    width: 100%;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_dropdown_fullwidth {
+    width: 100%;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_col_1 {
+    width: 16.66%; /*padding: 0 1%;*/
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_col_2 {
+    width: 33.33%;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_col_3 {
+    width: 50%;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_col_4 {
+    width: 66.66%;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_col_5 {
+    width: 83.33%;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_col_6 {
+    width: 100%;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li .sm_megamenu_first_fullwidth {
+    -moz-border-radius: 0px 5px 5px 5px;
+    -webkit-border-radius: 0px 5px 5px 5px;
+    border-radius: 0px 5px 5px 5px;
+}
+
+/* Showing Drop Down on Mouse Hover - Left aligned */
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li:hover .sm_megamenu_dropdown_1column,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li:hover .sm_megamenu_dropdown_2columns,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li:hover .sm_megamenu_dropdown_3columns,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li:hover .sm_megamenu_dropdown_4columns,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li:hover .sm_megamenu_dropdown_5columns,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li:hover .sm_megamenu_dropdown_6columns,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li.other-toggle.open .sm_megamenu_dropdown_1column,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li.other-toggle.open .sm_megamenu_dropdown_2columns,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li.other-toggle.open.sm_megamenu_dropdown_3columns,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li.other-toggle.open .sm_megamenu_dropdown_4columns,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li.other-toggle.open.sm_megamenu_dropdown_5columns,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li.other-toggle.open .sm_megamenu_dropdown_6columns {
+    visibility: visible;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li:hover .sm_megamenu_dropdown_fullwidth,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li.open .sm_megamenu_dropdown_fullwidth {
+    left: 100%;
+    top: -1px;
+}
+
+/* Columns Sizes */
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_col_1,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_col_2,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_col_3,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_col_4,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_col_5,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_col_6 {
+    display: inline;
+    float: left;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_dropdown_1column > .sm_megamenu_firstcolumn {
+    width: 130px;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_dropdown_2columns > .sm_megamenu_firstcolumn {
+    width: 260px;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_dropdown_3columns > .sm_megamenu_firstcolumn {
+    width: 390px;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_dropdown_4columns > .sm_megamenu_firstcolumn {
+    width: 520px;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_dropdown_5columns > .sm_megamenu_firstcolumn {
+    width: 650px;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_dropdown_6columns > .sm_megamenu_firstcolumn {
+    width: 780px;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_dropdown_1column > .sm_megamenu_firstcolumn,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_dropdown_2columns > .sm_megamenu_firstcolumn,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_dropdown_3columns > .sm_megamenu_firstcolumn,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_dropdown_4columns > .sm_megamenu_firstcolumn,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_dropdown_5columns > .sm_megamenu_firstcolumn,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_dropdown_6columns > .sm_megamenu_firstcolumn {
+    padding: 10px;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .pusher { /* Use this pucher if you want to give more vertical spacing between your rows of content */
+    margin-top: 18px;
+}
+
+/* 2-Levels Drop Down */
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .levels,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .levels ul { /* all lists */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu li:hover .levels a {
+    display: block;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .levels a {
+    display: block;
+    width: 10em;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .levels li {
+    float: left;
+    width: 150px;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .levels li ul { /* second-level lists */
+    position: absolute;
+    background: #161616;
+    border: 1px solid #000000;
+    top: -23px;
+    margin: 15px 0px 0px 4px;
+    padding: 6px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    background: -moz-linear-gradient(left, #161616, #0A0A0A);
+    background: -webkit-gradient(linear, 100% 0%, 0% 0%, from(#0A0A0A), to(#161616));
+    background: -o-linear-gradient(left, #161616, #0A0A0A);
+    left: -999em;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .levels li ul ul {
+    top: -23px;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .levels li:hover ul ul,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .levels li:hover ul ul ul {
+    left: -999em;
+}
+
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .levels li:hover ul,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .levels li li:hover ul,
+.sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .levels li li li:hover ul {
+    left: 142px;
+}
+
+
+
+.sm_megamenu_icon {
+    padding-left: 40px;
+    display: block;
+}
+
+.sm_megamenu_title .sm_megamenu_icon {
+    min-height: 21px;
+}
+
+.sm_megamenu_icon {
+    padding-left: 30px;
+    display: block;
+}
+
+.sm_megamenu_description {
+    font-size: 10px;
+    display: block;
+}

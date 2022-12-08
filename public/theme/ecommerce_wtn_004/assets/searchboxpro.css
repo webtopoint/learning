@@ -1,0 +1,76 @@
+.sm-serachbox-pro{
+	width: 100%;
+}
+
+.sm-serachbox-pro .sm-searchbox-advanced{
+	width: 17%;
+	float: right;
+	text-align: right;
+	margin-bottom: 10px;
+}
+
+.sm-serachbox-pro .sm-searchbox-popular .sm-searchbox-popular-title{
+	display: inline-block;
+	float: left;
+	margin-right: 5px;
+    color:#ff5500;
+    font-weight:bold;
+}
+.sm-serachbox-pro .sm-searchbox-keyword-list {
+    float: left;
+}
+.sm-serachbox-pro .sm-searchbox-keyword-list > li{
+	float: left;
+}
+.sm-serachbox-pro .sm-searchbox-keyword-list > li a {
+    float: left;
+	margin-right: 5px;
+    color:#fff;
+}
+.sm-serachbox-pro .sm-searchbox-keyword-list > li a:hover 
+{
+    color:#ff5500;
+}
+
+.sm-serachbox-pro .sm-searchbox-keyword-list > li a.sm-searchbox-more {
+    float: left;
+	margin-right: 10px;
+}
+
+.sm-searchbox-popular{
+	clear: both;
+}
+
+.sm-serachbox-pro .sm-searbox-content {
+	clear: both;
+    width: 100%;
+}
+.sm-serachbox-pro .sm-searbox-content .form-search{
+	text-align: left;
+	border: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 100%;
+	position: relative;
+}
+.sm-serachbox-pro .sm-searbox-content .form-search > input{
+	padding: 0 10px;
+	height: 40px;
+	float: left;
+	border: 1px solid #eee !important;
+	width:50%;
+	font-size: 12px;
+	line-height: 45px;
+}
+.sm-serachbox-pro .sm-searbox-content .form-search > select{
+	width:30%;
+	height: 40px;
+	float: left;
+}
+.sm-serachbox-pro select option {
+    padding: 5px 10px;
+}
+.sm-serachbox-pro input.input-text, .sm-serachbox-pro select, .sm-serachbox-pro textarea {
+	margin: 0;
+	border: 1px solid #eee;
+}
