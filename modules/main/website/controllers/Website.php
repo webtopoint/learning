@@ -445,7 +445,9 @@ class Website extends Main_Controller{
             'email' => 'ajay@gmail.com',
             'theme_id' => '1',
             'plan_id' => 1,
-            'account_manager_id' => 0
+            'account_manager_id' => 0,
+            'password' => 'admin',
+            'mobile' => '8533898539'
         ];
 
         $domain = 'baalgopalkids.com';
