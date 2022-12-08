@@ -21,6 +21,8 @@ class Admin extends Main_Controller {
     }
     
     function create_website(){
+        echo Modules::run('website/create');
+        exit;
          $this->render(['output' => Modules::run('website/create') ]);
     }
     
