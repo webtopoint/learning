@@ -161,6 +161,6 @@ switch (ENVIRONMENT)
  *
  * And away we go...
  */
-$tool = require_once APPPATH.'third_party/MX/Tool.php';
+require_once APPPATH.'third_party/MX/Tool.php';
 require_once BASEPATH.'core/CodeIgniter.php';
 // $tool->run();

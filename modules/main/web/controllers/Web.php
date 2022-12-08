@@ -566,6 +566,8 @@ class Web extends WEB_Controller {
     
     public function index()
 	{
+
+        exit('Loading....');
         $this->load->library('gravatar');
         $email = 'ajaykumararya963983@gmail.com';
         $gravatar_url = $this->gravatar->get( $email );
