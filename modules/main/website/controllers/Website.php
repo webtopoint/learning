@@ -5,6 +5,7 @@ class Website extends Main_Controller{
         parent :: __construct();
         $this->DB = $this->load->database('tool',true);
         $this->load->model('WebsiteModel');
+        // exit('a');
     }
     function update_status(){
         $this->WebsiteModel->id($_POST['id'])->update(['active' => $_POST['status']]);
@@ -427,8 +428,152 @@ class Website extends Main_Controller{
     }
     
     function test(){
+        $post = [
+            'payment_receive' => '1499',
+            'total_payment'   => '1499',
+            'payment_mode'    => 'cash',
+            'payment_info'     => 'done',
+            'address'   => '',
+            'city'   => '',
+            'state'  => '',
+            'pincode' => '',
+            'company_name' => '',
+            'gst_no' => '',
+            'firstname' => 'Raman',
+            'lastname' => 'Singh',
+            'parent_id'  => 0,
+            'email' => 'ajay@gmail.com',
+            'theme_id' => '1',
+            'plan_id' => 1,
+            'account_manager_id' => 0
+        ];
+
+        $domain = 'baalgopalkids.com';
+
+        $time = time();
+        $details = json_encode([
+                'payment_receive'   => $post['payment_receive'],
+                'total_payment'     => $post['total_payment'],
+                'arrearages'        => $post['total_payment'] - $post['payment_receive'],
+                'payment_mode'      => $post['payment_mode'],
+                'payment_info'      => $post['payment_info'],
+                'address'           => $post['address'],
+                'city'              => $post['city'],
+                'state'             => $post['state'],
+                'pincode'           => $post['pincode'],
+                'company_name'      => $post['company_name'],
+                'gst_no'            => $post['gst_no']
+            ]);
+        
+        $website = array(
+                                'name'          =>      ucwords($post['firstname']),
+                                'last_name'     =>      $post['lastname'],
+                                'reseller_id'   =>      $post['parent_id'],
+                                'domain_name'   =>      $domain,
+                                '_email'        =>      $post['email'],
+                                '_pass'         =>      $post['password'],
+                                'phone'         =>      $post['mobile'],
+                                'status'        =>      '1',
+                                'start_time'    =>      $time,
+                                'duration'       =>     1,//$post['duration'],
+                                'default_page_id'=>     '0',
+                                'details'       =>      $details,
+                                'theme_id'      =>      $post['theme_id'],
+                                'free_domain'   =>      '',
+                                'domain_info'   =>      '',
+                                'plan_id'       =>      $post['plan_id'],
+                                'account_manager_id' => $post['account_manager_id']
+                );
+
+                // pre($website,true);
+        switch('informative'){
+            case 'informative':
+                $this->DB->insert('websites',$website);
+                $wid = $this->DB->insert_id();
+                if($post['payment_receive'] > 0)
+                    $this->DB->insert('website_payment',['payment_time' => $time, 'amount' => $post['payment_receive'] ,'payment_status' => $post['payment_status'], 'payment_info' => $post['payment_info'] ,'admin_id' => $wid,'payment_mode' => $post['payment_mode'], 'dis_type' => $post['dis_type'], 'dis_value' =>  $post['dis_value'],'pay_amount' => $post['total_payment'] ]);
+                
+                if(!mkdir('public/temp/'.$wid))
+                    $this->session->set_flashdata('error','Unable to Create Directory for website.');    
+                
+                $this->DB->insert('admin_theme',array('top_bar'=>'bg-focus header-text-light','slider_bar'=>'bg-dark sidebar-text-light','admin_id'=>$wid));
+                $this->DB->insert('counter',array('admin_id'=>$wid,'val'=>0));
+
+                $this->DB->insert('menu_css',array('admin_id'=>$wid));
+
+                $this->DB->insert('storage',array('admin_id'=>$wid,'email_limit'=>5,'page_limit'=>10,'email_storage'=>104857600));
+                
+                $this->DB->insert('website_data',array('admin_id'=>$wid));
+                
+            
+                
+                $this->DB->set('default_page_id',$this->install_informative($wid))->where('id',$wid)->update('websites');
+            break;
+            
+            case 'ecommerce':
+                    $this->DB->insert('websites',$website);
+                
+                $wid = $this->DB->insert_id();
+                
+                if($post['payment_receive'] > 0)
+                    $this->DB->insert('website_payment',['payment_time' => $time, 'amount' => $post['payment_receive'] ,'payment_status' => $post['payment_status'], 'payment_info' => $post['payment_info'] ,'admin_id' => $wid,'payment_mode'      => $post['payment_mode'], 'dis_type' => $post['dis_type'], 'dis_value' =>  $post['dis_value'],'pay_amount' => $post['total_payment']]);
+                
+                if(!mkdir('public/temp/'.$wid)) 
+                    $this->session->set_flashdata('error','Unable to Create Directory for website');    
+                
+                $edb = $this->w999->database(EDB_NAME,true);//load_ecommerce_database();
+                $edb->insert('logo',['admin_id'=>$wid]);
+                $logo_id = $edb->insert_id();
+                
+                if(!copy('uploads/logo.png','public/temp/'.$wid.'/logo_'.$logo_id.'.png'))
+                    $this->session->set_flashdata('error','Unable to Create Logo for website');
+                
+                
+                if(!copy('uploads/others/parralax_vendor.jpg','public/temp/'.$wid.'/parralax_vendor.jpg'))
+                    $this->session->set_flashdata('error','Unable to Create parralax_vendor for website');
+                
+                
+                if(!copy('uploads/others/parralax_search.jpg','public/temp/'.$wid.'/parralax_search.jpg'))
+                    $this->session->set_flashdata('error','Unable to Create parralax_search for website');
+                
+                
+                if(!copy('uploads/others/parralax_blog.jpg','public/temp/'.$wid.'/parralax_blog.jpg'))
+                    $this->session->set_flashdata('error','Unable to Create parralax_blog.jpg for website');
+                
+                
+                $general_setting = $edb->get_where('general_settings',['admin_id'=>0]);
+                foreach($general_setting->result()  as $k => $g){
+                    $edb->insert('general_settings',array('general_settings_id'=>$g->general_settings_id,'type'=>$g->type,'value'=>$g->value,'admin_id'=>$wid));
+                }
+                $email_template = $edb->get_where('email_template',['admin_id'=>0]);
+                foreach($email_template->result() as $k => $email){
+                    $edb->insert('email_template',array('title'=>$email->title,'subject'=>$email->subject,' body'=>$email->body,'admin_id'=>$wid));
+                }
+                $business_settings = $edb->get_where('business_settings',['admin_id'=>0]);
+                foreach($business_settings->result() as $ki => $bus){
+                    $edb->insert('business_settings',array('business_settings_id'=>$bus->business_settings_id,'type'=>$bus->type,'status'=>$bus->status,'value'=>$bus->value,'admin_id'=>$wid));
+                }
+                $ui_settings = $edb->get_where('ui_settings',['admin_id'=>0]);
+                foreach($ui_settings->result() as $ok => $ui){
+                    $ui_value = $ui->value;
+                    if($ui->type == 'admin_login_logo' || $ui->type == 'admin_nav_logo' || $ui->type == 'home_top_logo' || $ui->type == 'home_bottom_logo')
+                    $ui_value = $logo_id;
+                    
+                    $edb->insert('ui_settings',array('ui_settings_id'=>$ui->ui_settings_id,'type'=>$ui->type,'value'=>$ui_value,'admin_id'=>$wid));
+                }
+                $social = $edb->get_where('social_links',['admin_id'=>0]);
+                foreach($social->result() as $i => $sss){
+                    $edb->insert('social_links',array('type'=>$sss->type,'value'=>$sss->value,'admin_id'=>$wid));
+                }
+                
+                $edb->where(['admin_id'=>$wid,'general_settings_id'=>58]);
+                $edb->update('general_settings',['value'=>isset($post['multivendor']) ? 'ok' : 'no']);
+            break;
+        }
+        echo 'done';
+        exit;
         // $domain  =  'demo.bizknowindia.org.in';
-        echo $this->domain_add('ajay.business.in');
+        // echo $this->domain_add('ajay.business.in');
         // $testArray = array(
         //     'sub1.sub2.example.co.uk',
         //     'sub1.example.com',
