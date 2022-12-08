@@ -447,7 +447,10 @@ class Website extends Main_Controller{
             'plan_id' => 1,
             'account_manager_id' => 0,
             'password' => 'admin',
-            'mobile' => '8533898539'
+            'mobile' => '8533898539',
+            'payment_status' => 'success',
+            'dis_type' => '',
+            'dis_value' => ''
         ];
 
         $domain = 'baalgopalkids.com';
