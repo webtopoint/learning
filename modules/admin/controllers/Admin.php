@@ -10,7 +10,7 @@ class Admin extends Tool_Controller
 		check_admin_login();
 		$this->load->database();       
 		$this->Admin['front']  	 = $this->SiteModel->getTheme();    
-// 		if(strtolower($this->router->fetch_class()) == 'admin'){
+// 		if(strtolower($this->router->fetch_class()) == 'admin'){ running
 		    
 //     		cPanelAPILoad(); 
 //     		$this->_api = new cpanelAPI( C_USER, C_KEY, C_HOST ); 
