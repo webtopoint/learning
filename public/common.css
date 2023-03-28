@@ -94,8 +94,7 @@
             {
             	color: #f70000;
             }
-            </style>
-            <style type="text/css">
+            
             	    .fixed-header{
             	        position: static!important;
             	    }
@@ -135,7 +134,7 @@
             	.social_links > a
             	{
             		text-align: center;
-            		line-height: 60px;
+            		line-height: 3px;
             		font-size: 20px;
             		background: black;
             		width: 42px!important;	
