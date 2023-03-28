@@ -262,7 +262,7 @@
                           
                         if(array_key_exists('child',$value))
 
-                          $html.= '<li class="has-children '.$activeCss.'"><a href="'.$_page_url.'" '.$value['target'].' class="menu-css">'.$iconWithTExt.'</a>'; 
+                          $html.= '<li class="has-children "><a href="'.$_page_url.'" '.$value['target'].' class="menu-css '.$activeCss.'">'.$iconWithTExt.'</a>'; 
 
                         else
 
